@@ -1,0 +1,26 @@
+{
+  "name": "sassy-inline-svg",
+  "version": "1.0.0",
+  "description": "Yet another SVG inliner, designed to work with eyeglass and node-sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eyeglass-module",
+    "sass",
+    "svg",
+    "inline",
+    "node-sass"
+  ],
+  "eyeglass": {
+    "sassDir": "sass",
+    "exports": "eyeglass-exports.js",
+    "needs": "^1.0.0"
+  },
+  "author": "Lisa Martens",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

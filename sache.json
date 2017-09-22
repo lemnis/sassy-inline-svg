@@ -1,0 +1,11 @@
+{
+  "name": "Sass Inline SVG",
+  "description": "Yet another SVG inliner, designed to work with eyeglass and node-sass.",
+  "tags": [
+    "eyeglass-module",
+    "sass",
+    "svg",
+    "inline",
+    "node-sass"
+  ]
+}
