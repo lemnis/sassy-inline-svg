@@ -21,6 +21,7 @@
   "author": "Lisa Martens",
   "license": "ISC",
   "dependencies": {
+    "jsdom": "^11.2.0",
     "node-sass": "^4.5.3"
   }
 }

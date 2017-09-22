@@ -1,3 +1,15 @@
+## Installation
+
+This module only with `node-sass`, e.g. `gulp-sass`.
+
+```
+npm install --save-dev https://github.com/lemnis/sassy-inline-svg.git
+```
+
+## Using [Eyeglass](https://github.com/sass-eyeglass/eyeglass)
+
+With eyeglass  set up, you can  add `@import "sassy-inline-svg";` in your `.scss` file;
+
 ## Usage with node-sass
 
 Your config file:
@@ -9,13 +21,6 @@ sass.render({
   ...
 })
 ```
-## Installation
-
-This module only works with `node-sass`, e.g. `gulp-sass`.
-
-## Using [Eyeglass](http://eyeglass.rocks/)
-
-With eyeglass  set up, you can  add `@import "sassy-inline-svg";` in your `.scss` file;
 
 ## Basic usage
 
