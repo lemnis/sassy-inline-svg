@@ -33,6 +33,10 @@ var functions = {
 					if(val == false){
 						svgoIsDisabled = true;
 					} else {
+						// lists can contain 1 element, making it not convert to a array
+						if(typeof val == 'object'){
+							val = [val];
+						}
 						svgo.updateInstance({plugins: val});
 					}
 					break;
@@ -50,7 +54,7 @@ var functions = {
 			var svgDom = new dom(svgData);
 
 			// No extra styles given, return the original svg
-			if(styles == sass.types.Null()){
+			if(sassHelpers.toNativeType(styles) == null){
 				return sendString(svgData, encoding, svgoIsDisabled, done);
 			}
 
