@@ -2,7 +2,7 @@
   "name": "sassy-inline-svg",
   "version": "1.0.0",
   "description": "Yet another SVG inliner, designed to work with eyeglass and node-sass.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,9 @@
   "license": "ISC",
   "dependencies": {
     "jsdom": "^11.2.0",
-    "node-sass": "^4.5.3"
+    "mocha": "^3.5.3",
+    "node-sass": "^4.5.3",
+    "rewire": "^2.5.2",
+    "svgo": "^0.7.2"
   }
 }

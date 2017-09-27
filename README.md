@@ -24,13 +24,28 @@ sass.render({
 
 ## Basic usage
 
-### `inline-svg($path, $styles)`
+### `inline-svg($path, [$styles], [$options])`
 
 Arguments:
 * `{String}` Path to the svg, relative to the root file (`options.file`)
 * `{String}` Optional
   * Path to a `*.scss` file to embed inside the svg
   * or CSS as string
+* `{Map}` Optional
+	* encoding: `base64` or `optimized` (default: `optimized`)
+	* svgo: `{Map|Boolean}`
+    * Set to `false` will disable svgo functionality
+    * To set custom plugin settings using lists, e.g.
+      ```scss
+      svgo:
+        (removeDoctype: false)
+        (
+          cleanupNumericValues: (
+            floatPrecision: 2
+          )
+        )
+      ```
+      **removeXMLNS** set to `true` will prevent the rendering of the SVGs in IE and Edge.
 
 #### Examples
 
@@ -50,10 +65,7 @@ Arguments:
 
 ## To do
 
-* add tests
 * add to npmjs.com
 * add to sache.in
-* parse embedded sass file with main sass options
-* add possibility to choose encoding
-* add possibility to minify the svg with svgo
-* add lint + .editorconfig files
+* add selenium tests
+* add possibility to inline the css
